@@ -6,10 +6,10 @@ The master branch contains the initial version to get started with, while the br
 
 ## Setting up the project
 
-* In your terminal, create directory `linkedin-websites-nodejs-express` and **change into it**.
+* In your terminal, create directory `building-website-nodejs-express` and **change into it**.
 * Run 
   ```bash
-  git clone --bare git@github.com:danielkhan/linkedin-websites-nodejs-express.git .git
+  git clone --bare git@github.com:danielkhan/building-website-nodejs-express.git .git
   git config --bool core.bare false
   git reset --hard
   git branch
