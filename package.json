@@ -4,7 +4,8 @@
   "description": "Exercise files for my course Building a Website with Node.js and Express",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon --ignore feedback.json server.js"
   },
   "keywords": [],
   "author": "Daniel Khan",
@@ -15,6 +16,7 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^1.19.4",
     "prettier": "^1.18.2"
   },
   "dependencies": {
