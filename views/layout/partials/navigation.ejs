@@ -29,9 +29,10 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/speakers">All Speakers</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Lorenzo Garcia</a>
-            <a class="dropdown-item" href="./Hillary_Goldwynn.html">Hilary Goldywynn Post</a>
-            <a class="dropdown-item" href="#">Riley Rudolph Rewington</a>
+
+            <% speakerNames.forEach(function (speaker) {%>
+            <a class="dropdown-item" href="/speakers/<%=speaker.shortname%>"><%=speaker.name%></a>
+            <%})%>
           </div>
         </li>
         <li class="nav-item"><a href="/feedback" class="nav-link">Feedback</a></li>
