@@ -12,6 +12,8 @@ const routes = require('./routes');
 
 const app = express();
 
+app.locals.siteName = 'ROUX Academy';
+
 const port = 3000;
 
 app.set('trust proxy', 1);
@@ -27,6 +29,13 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
 app.use(express.static(path.join(__dirname, './static')));
+
+app.use(async (request, response, next) => {
+  const names = await speakersService.getNames();
+  response.locals.speakerNames = names;
+  console.log(response.locals);
+  return next();
+});
 
 app.use(
   '/',
