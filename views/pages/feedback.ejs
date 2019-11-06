@@ -3,13 +3,14 @@
     <div class="col-md-4">
       <div class="maincontent">
         <h1>Send us feedback</h1>
-        <form class="feedback-form">
+        <form class="feedback-form" method="POST" action="/feedback">
           <div class="form-group">
             <label for="feedback-form-name">Name</label>
             <input
               type="text"
               class="form-control"
               id="feedback-form-name"
+              name="name"
               placeholder="Enter your name"
             />
           </div>
@@ -19,6 +20,7 @@
               type="text"
               class="form-control"
               id="feedback-form-email"
+              name="email"
               placeholder="Enter your email address"
             />
           </div>
@@ -28,6 +30,7 @@
               type="text"
               class="form-control"
               id="feedback-form-title"
+              name="title"
               placeholder="Title of your feedback"
             />
           </div>
@@ -38,6 +41,7 @@
               placeholder="Enter your message, then hit the submit button"
               class="form-control"
               id="feedback-form-message"
+              name="message"
               rows="6"
             ></textarea>
           </div>
