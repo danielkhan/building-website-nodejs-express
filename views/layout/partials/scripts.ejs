@@ -13,4 +13,9 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"
 ></script>
+
+<% if (locals.artwork) {%>
 <script src="/js/pixgrid.js"></script>
+<%}%> <% if (locals.feedback) {%>
+<script src="/js/feedback.js"></script>
+<%}%>
