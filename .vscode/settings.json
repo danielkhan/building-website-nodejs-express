@@ -1,5 +1,7 @@
 {
    "eslint.alwaysShowStatus": true,
    "editor.formatOnSave": true,
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.tabSize": 3,
+   "editor.acceptSuggestionOnEnter": "off"
 }
