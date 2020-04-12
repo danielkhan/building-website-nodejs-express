@@ -16,7 +16,6 @@ module.exports = params => {
       // console.log(`You visited the page ${request.session.visitcount} times`);
 
       const topSpeakers = await speakerService.getList();
-      console.log(topSpeakers);
 
       response.render('layout', { pageTitle: 'Welcome', template: 'index', topSpeakers });
    });
