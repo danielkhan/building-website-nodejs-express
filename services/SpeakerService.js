@@ -1,5 +1,5 @@
-const fs = require("fs");
-const util = require("util");
+const fs = require('fs');
+const util = require('util');
 
 /**
  * We want to use async/await with fs.readFile - util.promisfy gives us that
@@ -25,7 +25,8 @@ class SpeakerService {
     const data = await this.getData();
 
     // We are using map() to transform the array we get into another one
-    return data.map(speaker => {
+    return data.map((speaker) => {
+      //throw new Error('Async await error');
       return { name: speaker.name, shortname: speaker.shortname };
     });
   }
@@ -54,7 +55,7 @@ class SpeakerService {
    */
   async getArtworkForSpeaker(shortname) {
     const data = await this.getData();
-    const speaker = data.find(elm => {
+    const speaker = data.find((elm) => {
       return elm.shortname === shortname;
     });
     if (!speaker || !speaker.artwork) return null;
@@ -67,7 +68,7 @@ class SpeakerService {
    */
   async getSpeaker(shortname) {
     const data = await this.getData();
-    const speaker = data.find(elm => {
+    const speaker = data.find((elm) => {
       return elm.shortname === shortname;
     });
     if (!speaker) return null;
@@ -75,7 +76,7 @@ class SpeakerService {
       title: speaker.title,
       name: speaker.name,
       shortname: speaker.shortname,
-      description: speaker.description
+      description: speaker.description,
     };
   }
 
@@ -84,11 +85,11 @@ class SpeakerService {
    */
   async getListShort() {
     const data = await this.getData();
-    return data.map(speaker => {
+    return data.map((speaker) => {
       return {
         name: speaker.name,
         shortname: speaker.shortname,
-        title: speaker.title
+        title: speaker.title,
       };
     });
   }
@@ -98,12 +99,12 @@ class SpeakerService {
    */
   async getList() {
     const data = await this.getData();
-    return data.map(speaker => {
+    return data.map((speaker) => {
       return {
         name: speaker.name,
         shortname: speaker.shortname,
         title: speaker.title,
-        summary: speaker.summary
+        summary: speaker.summary,
       };
     });
   }
@@ -112,7 +113,7 @@ class SpeakerService {
    * Fetches speakers data from the JSON file provided to the constructor
    */
   async getData() {
-    const data = await readFile(this.datafile, "utf8");
+    const data = await readFile(this.datafile, 'utf8');
     return JSON.parse(data).speakers;
   }
 }
