@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
-app.locals.siteName = 'Rahul Mishra Meetups';
+app.locals.siteName = 'ISA HIT Branch';
 
 //Middlewares are applied in Express
 app.use(express.static(path.join(__dirname, './static')));
