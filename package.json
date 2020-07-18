@@ -4,8 +4,7 @@
   "description": "Exercise files for my course Building a Website with Node.js and Express",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon --ignore feedback.json server.js"
+    "start": "nodemon --ignore feedback.json server.js"
   },
   "keywords": [],
   "author": "Daniel Khan",
@@ -14,6 +13,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
   }
 }

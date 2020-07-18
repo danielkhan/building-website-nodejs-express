@@ -1,0 +1,122 @@
+doctype html
+html
+  head
+    title Roux Meetups - #{pageTitle}
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    link(rel="stylesheet" href="./css/style.css")
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=block" rel="stylesheet")
+  body
+    header
+      .jumbotron.d-none.d-sm-block
+      nav.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark
+        .container
+          button.navbar-toggler.collapsed(type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
+            span.sr-only Toggle navigation
+            |           ☰
+          a.navbar-brand(href="./index.html") Roux Meetups
+          #navbar-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto
+              li.nav-item
+                a.nav-link(href="./index.html") Home
+              li.nav-item.dropdown
+                a#navbarDropdown.nav-link.dropdown-toggle(href="./speakers.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                  | Speakers
+                .dropdown-menu(aria-labelledby="navbarDropdown")
+                  a.dropdown-item(href="./speakers.html") All Speakers
+                  .dropdown-divider
+                  a.dropdown-item(href="#") Lorenzo Garcia
+                  a.dropdown-item(href="./Hillary_Goldwynn.html") Hilary Goldywynn Post
+                  a.dropdown-item(href="#") Riley Rudolph Rewington
+              li.nav-item
+                a.nav-link(href="./feedback.html") Feedback
+    article.speakerslist.jumbotron.d-none.d-sm-block
+      .container
+        .row
+          .col-md.text-center
+            h4.speakerslist-title Art in Full Bloom
+            .speakerslist-name
+              | with
+              a(href="#") Lorenzo Garcia
+            .speakerslist-info.mt-2
+              a(href="#")
+                img.speakerslist-img.rounded-circle(src="./images/speakers/Lorenzo_Garcia_tn.jpg" alt="Photo of Lorenzo Garcia")
+          .col-md.text-center
+            h4.speakerslist-title Deep Sea Wonders
+            .speakerslist-name
+              | with
+              a(href="./Hillary_Goldwynn.html") Hilary Goldywynn Post
+            p.speakerslist-info.mt-2
+              a(href="./Hillary_Goldwynn.html")
+                img.speakerslist-img.rounded-circle(src="./images/speakers/Hillary_Goldwynn_tn.jpg" alt="Photo of Hilary Goldywynn Post")
+          .col-md.text-center
+            h4.speakerslist-title The Art of Abstract
+            .speakerslist-name
+              | with
+              a(href="#") Riley Rudolph Rewington
+            p.speakerslist-info.mt-2
+              a(href="#")
+                img.speakerslist-img.rounded-circle(src="./images/speakers/Riley_Rewington_tn.jpg" alt="Photo of Riley Rudolph Rewington")
+    .container.mt-4
+      .row
+        .col-md-8
+          article.article.maincontent
+            h1 Who are we?
+            p
+              | The Roux Academy gets thousands of submissions every year for artists interesting in participating in the
+              | CAC exhibits, and selects approximately 200 distinct pieces of contemporary art for display in their
+              | collective exhibit.
+              | In addition, 12 individuals are honored as Featured Artists - each being granted his or her own exhibit
+              | hall to display entire collections or themed pieces.
+            p
+              | Each Featured Artist has an opportunity to speak at one of our meetups and share his or her vision,
+              | perspective, and techniques with attendees on a more personal level than at our large conference. It is
+              | truly an honor to be a
+              | CAC Featured Artist and many past students artists who were featured at CAC have gone on to brilliant
+              | careers in art.
+          article.article.maincontent
+            h2.article-title Get Busy!
+            p
+              | If you want to keep up with what's going on with the group, 
+              a(href="http://www.meetup.com/rouxmeet") join our meetup group
+              | ,
+              a(href="http://www.twitter.com/rouxmeet") follow us on twitter
+              | . If you're in FaceBook, you can
+              |             also 
+              a(href="http://www.facebook.com/rouxmeet") join our FaceBook group
+              | .
+        aside.col-md-4
+          article.sidebar
+            h1.sidebar-title Who should come?
+            ul.sidebar-body
+              li Anybody interested in art and the creative industry
+              li Painters, sculptors, photographers and graphic artists
+              li
+                | Those interested in meeting and making a connection with others in the local art scene.
+          article.sidebar
+            h1.sidebar-title Artwork on display
+            p.sidebar-body
+              | While you attend the conference, head over to our gallery where you can check out some
+              | of the work from our speakers.
+            .pixgrid.clearfix
+              img(src="./images/artwork/Lorenzo_Garcia_01_tn.jpg" alt="Artwork 0")
+              img(src="./images/artwork/Lorenzo_Garcia_02_tn.jpg" alt="Artwork 1")
+              img(src="./images/artwork/Lorenzo_Garcia_03_tn.jpg" alt="Artwork 2")
+              img(src="./images/artwork/Lorenzo_Garcia_04_tn.jpg" alt="Artwork 3")
+              img(src="./images/artwork/Hillary_Goldwynn_01_tn.jpg" alt="Artwork 4")
+              img(src="./images/artwork/Hillary_Goldwynn_02_tn.jpg" alt="Artwork 5")
+              img(src="./images/artwork/Hillary_Goldwynn_03_tn.jpg" alt="Artwork 6")
+              img(src="./images/artwork/Hillary_Goldwynn_04_tn.jpg" alt="Artwork 7")
+              img(src="./images/artwork/Hillary_Goldwynn_05_tn.jpg" alt="Artwork 8")
+              img(src="./images/artwork/Hillary_Goldwynn_06_tn.jpg" alt="Artwork 9")
+              img(src="./images/artwork/Hillary_Goldwynn_07_tn.jpg" alt="Artwork 10")
+              img(src="./images/artwork/Riley_Rewington_01_tn.jpg" alt="Artwork 11")
+              img(src="./images/artwork/Riley_Rewington_02_tn.jpg" alt="Artwork 12")
+              img(src="./images/artwork/Riley_Rewington_03_tn.jpg" alt="Artwork 13")
+              img(src="./images/artwork/Riley_Rewington_04_tn.jpg" alt="Artwork 14")
+              img(src="./images/artwork/Riley_Rewington_05_tn.jpg" alt="Artwork 15")
+              img(src="./images/artwork/Riley_Rewington_06_tn.jpg" alt="Artwork 16")
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    script(src="./js/pixgrid.js")
