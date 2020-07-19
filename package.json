@@ -13,6 +13,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "pug": "^3.0.0"
   }
