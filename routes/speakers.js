@@ -4,7 +4,7 @@ const router = express.Router();
 
 module.exports = (params) => {
 
-    const { speakerService } = params;
+    const speakerService = params.speakerService;
 
     router.get('/', async (request, response) => {
         const speakers = await speakerService.getList();
