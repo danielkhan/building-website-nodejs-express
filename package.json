@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "Daniel Khan",
   "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
