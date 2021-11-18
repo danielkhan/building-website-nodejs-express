@@ -16,10 +16,12 @@ app.use(express.static(path.join('./static')));
 
 // routes HTTP GET requests. takes path and callback as args
 app.get('/', (req, res) => {
+  // renders view from pages/index. defines local pageTitle variable of 'Welcome' for the view
   res.render('pages/index', {pageTitle: 'Welcome'})
 });
 
 app.get('/speakers', (req, res) => {
+  // transfers file at given path.
   res.sendFile(path.join(__dirname, './static/speakers.html'));
 });
 
