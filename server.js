@@ -14,17 +14,6 @@ app.set('views', path.join(__dirname, './views'))
 // express.static serves static files, arg specifies root directory from which to serve static assets from.
 app.use(express.static(path.join('./static')));
 
-// routes HTTP GET requests. takes path and callback as args
-app.get('/', (req, res) => {
-  // renders view from pages/index. defines local pageTitle variable of 'Welcome' for the view
-  res.render('pages/index', {pageTitle: 'Welcome'})
-});
-
-app.get('/speakers', (req, res) => {
-  // transfers file at given path.
-  res.sendFile(path.join(__dirname, './static/speakers.html'));
-});
-
 // binds and listens for connections on specified port
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}!`);
