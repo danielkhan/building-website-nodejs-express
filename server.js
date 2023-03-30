@@ -1,24 +1,22 @@
-const express = require('express')
+const express = require('express');
 
-const path = require('path')
+const path = require('path');
 
-const app = express()
+const routes = require('./routes');
 
-const port = 3000
+const app = express();
 
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, './views'))
+const port = 3000;
 
-app.use(express.static(path.join(__dirname, './static')))
+app.set('view engine', 'ejs');
 
-app.get('/', (request, response) => {
-    response.render('pages/index', { pageTitle: 'Welcome' });
-})
+app.set('views', path.join(__dirname, './views'));
 
-app.get('/speakers', (request, response) => {
-  response.sendFile(path.join(__dirname, './static/speakers.html'))
-})
+app.use(express.static(path.join(__dirname, './static')));
+
+app.use('./', routes());
+
 
 app.listen(port, () => {
-  console.log(`Express server is running on port ${port}!`)
-})
+  console.log(`Express server is running on port ${port}!`);
+});
